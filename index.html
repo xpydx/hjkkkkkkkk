@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-[url('ha.jpg')] bg-no-repeat bg-cover">
+    <div class="backdrop-blur-lg bg-white/30 py-12">
+      <h1 class="text-center text-2xl mt-16">To-Do List</h1>
+      <div class="justify-center text-center mt-5 gap-5">
+        <input id="list" class="border border-black" type="text" title=""></input>
+        <input id="tanggal" class="border border-black" type="datetime-local" />
+
+        <button  id="add" class="bg-slate-200 px-2">add</button>
+      </div>
+      <div class="mx-auto justify-center text-center mt-4">
+        <label for="">show</label>
+        <select name="" id="select">
+          <option id="semua" value="All">All</option>
+          <option id="selesai" value="Complete">Complete</option>
+          <option id="belumselsai" value="pending">pending</option>
+        </select>
+      </div>
+      <ul id="listtas"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
